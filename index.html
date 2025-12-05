@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GĐPT Chánh Niệm - Hệ Thống Quản Lý</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#395270',
+                50: '#f0f3f6',
+                100: '#dde3ea',
+                200: '#c0cbd8',
+                300: '#94aac0',
+                400: '#6485a3',
+                500: '#486888',
+                600: '#395270',
+                700: '#2f435b',
+                800: '#29394c',
+                900: '#253140',
+              },
+              accent: {
+                DEFAULT: '#FFC000',
+                500: '#FFC000',
+                600: '#e6ad00',
+              },
+              success: '#00B050',
+              warning: '#FFC000',
+              danger: '#C00000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f3f4f6;
+      }
+      .dark body {
+        background-color: #111827;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      /* Animations */
+      @keyframes slide-up {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .animate-slide-up {
+        animation: slide-up 0.3s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.9",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.86.2",
+    "qrcode.react": "https://aistudiocdn.com/qrcode.react@^3.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

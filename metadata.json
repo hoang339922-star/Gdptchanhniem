@@ -1,0 +1,7 @@
+{
+  "name": "GĐPT Chánh",
+  "description": "Hệ thống quản lý toàn diện cho Gia Đình Phật Tử Chánh Niệm. Bao gồm quản lý nhân sự, điểm danh, tu học, tài chính và báo cáo.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
